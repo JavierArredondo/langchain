@@ -20,6 +20,7 @@ from langchain.callbacks.human import HumanApprovalCallbackHandler
 from langchain.callbacks.infino_callback import InfinoCallbackHandler
 from langchain.callbacks.labelstudio_callback import LabelStudioCallbackHandler
 from langchain.callbacks.llmonitor_callback import LLMonitorCallbackHandler
+from langchain.callbacks.logging_callback import LoggingCallbackHandler
 from langchain.callbacks.manager import (
     collect_runs,
     get_openai_callback,
@@ -64,6 +65,7 @@ __all__ = [
     "FinalStreamingStdOutCallbackHandler",
     "LLMThoughtLabeler",
     "LangChainTracer",
+    "LoggingCallbackHandler",
     "StreamlitCallbackHandler",
     "WandbCallbackHandler",
     "WhyLabsCallbackHandler",
